@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAC9C9"
+    tools:context=".signup">
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableTint="@color/purple_700"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/Email1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:drawableTint="@color/purple_700"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/curve"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+            android:drawableTint="@color/purple_700"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/isTeacher"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:text="Register as Admin"
+            app:layout_constraintBottom_toTopOf="@id/forgot_Pass"
+            app:layout_constraintEnd_toEndOf="@id/forgot_Pass"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass"
+            app:layout_constraintVertical_bias="0">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/isStudent"
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Register as Student"
+            app:layout_constraintBottom_toTopOf="@id/forgot_Pass"
+            app:layout_constraintEnd_toEndOf="@id/forgot_Pass"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass"
+            app:layout_constraintVertical_bias="0">
+
+        </CheckBox>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Create Account"
+            app:cornerRadius="10dp"></Button>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Login"
+            app:cornerRadius="10dp"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
