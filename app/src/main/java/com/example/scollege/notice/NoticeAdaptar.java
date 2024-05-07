@@ -57,7 +57,7 @@ public class NoticeAdaptar  extends RecyclerView.Adapter<NoticeAdaptar.NoticeVie
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setMessage("Want to deleter this notice?");
+                builder.setMessage("Want to delete this notice?");
                 builder.setCancelable(true);
                 builder.setPositiveButton(
                         "OK",
